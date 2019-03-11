@@ -1,7 +1,5 @@
-var text = document.getElementById("text");
-var submitBtn = document.getElementById("submitBtn");
+var bigOne  = document.getElementById("bigOne");
 
-function submitClick(){
-    let firebaseRef = firebase.database().ref();
-    firebaseRef.child("Text").set("some names");
-}
+var dbRef = firebase.database().ref().child('text');
+
+dbRef.on('value', snap => bigOne.innerText = snap.val());

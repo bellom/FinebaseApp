@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Firebase-App</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+
+      <div style="text-align: center">
+        <h1 id="bigOne"></h1>
+        <textarea></textarea>
+        <h2></h2>
+        <button>submit</button>
+      </div>
+
+        
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAislv6qHJvJXa9Hc90kztqkEC1zgo-k4o",
+            authDomain: "simpleblogwithfirebase-d94e0.firebaseapp.com",
+            databaseURL: "https://simpleblogwithfirebase-d94e0.firebaseio.com",
+            projectId: "simpleblogwithfirebase-d94e0",
+            storageBucket: "simpleblogwithfirebase-d94e0.appspot.com",
+            messagingSenderId: "130353693937"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script src="index.js"></script>
+
+    </body>
+</html>
